@@ -17,7 +17,7 @@ module.exports = {
   },
 
   staging: {
-    client: 'postgresql',
+    client: 'pg',
     connection: {
       database: 'didactic-octo-train',
       user:     'awray',
@@ -33,7 +33,7 @@ module.exports = {
   },
 
   production: {
-    client: 'postgresql',
+    client: 'pg',
     connection: process.env.DATABASE_URL
       },
     pool: {
@@ -43,6 +43,6 @@ module.exports = {
     migrations: {
       tableName: 'knex_migrations'
     }
-  }
+
 
 };
